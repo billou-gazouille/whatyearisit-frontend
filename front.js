@@ -8,5 +8,5 @@ const backendURLprefix = 'https://whatyearisit-backend-billou-gazouille.vercel.a
 fetch(backendURLprefix + 'year/')
     .then(resp => resp.json())
     .then(data => {
-        h1.innerHTML = data.year;
+        h1.textContent = data.year;
 });
